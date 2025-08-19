@@ -1,0 +1,122 @@
+/* Basic reset and typography */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    background-color: white;
+}
+
+/* Navigation Bar */
+.navigation-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-menu {
+    cursor: pointer;
+    margin-left: 20px;
+    /* Styles for the hamburger icon */
+}
+
+.menu-bar {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 2px;
+}
+
+/* Main Content and Profile Section */
+.main-content {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.profile-section {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    flex: 1 1 400px; /* Allows the image container to grow/shrink */
+}
+
+.profile-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.profile-info {
+    flex: 2 1 600px; /* Allows the info container to grow/shrink */
+}
+
+.profile-info h1 {
+    font-size: 96px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.detail {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bio p {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.quote {
+    margin-top: 40px;
+}
+
+.quote p {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-info h1 {
+        font-size: 60px;
+    }
+
+    .label, .detail, .bio p, .quote p {
+        font-size: 24px;
+    }
+}
